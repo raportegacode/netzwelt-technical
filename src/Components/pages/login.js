@@ -28,8 +28,8 @@ function Login({ setToken }) {
     const [username, setUserName] = useState();
     const [password, setPassword] = useState();
 
-    const handleSubmit = async e => {
-        e.preventDefault();
+    const handleSubmit = async () => {
+        // e.preventDefault();
         try {
             const response = await fetch('https://netzwelt-devtest.azurewebsites.net/Account/SignIn', {
                 method: 'POST',
